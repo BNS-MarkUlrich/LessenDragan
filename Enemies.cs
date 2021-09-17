@@ -42,7 +42,7 @@ public class Enemies
         }
         else
         {
-            _isTakingDamage == false;
+            _isTakingDamage = false;
         }
     }
 }

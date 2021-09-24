@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 public class Enemies
 {
-    public string _enemyName {get; set;} // Name
-    public float _health {get; set;} // Base health
-    public float _armourHealth {get; set;} // Armour amount
-    public float _damage {get; set;} // Base damage
+    public string _enemyName {get; set;}
+    public float _health {get; set;} 
+    public float _armourHealth {get; set;} 
+    public float _damage {get; set;}
     public DamageTypes _damageType {get; set;} // WIP: Type of damage, adds modifier based on target health and armour
     public float _range; // Determines how far enemy can shoot, 0 means it cannot use ranged attacks
 

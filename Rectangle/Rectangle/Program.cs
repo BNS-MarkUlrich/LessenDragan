@@ -8,7 +8,6 @@ namespace Rectangle
         private float y;
         private float width;
         private float height;
-        private bool square;
 
         public Rectangle(float x, float y, float width, float height)
         {
@@ -47,11 +46,11 @@ namespace Rectangle
         {
             if (height == width)
             {
-                return square = true;
+                return true;
             }
             else
             {
-                return square = false;
+                return false;
             }
             
         }
@@ -70,7 +69,7 @@ namespace Rectangle
             Rectangle vierkant = new Rectangle(50, 50, 50);
             Rectangle vierkantBeweeg = new Rectangle(50);
             Rectangle rechthoekBeweeg = new Rectangle(20, 30);
-            
+
             vierkantBeweeg.MoveTo(50, 50);
             rechthoekBeweeg.MoveTo(100, 100);
             rechthoekBeweeg.Set(rechthoekBeweeg.x, rechthoekBeweeg.y, rechthoek.width, rechthoek.height);
